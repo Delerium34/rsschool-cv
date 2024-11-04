@@ -21,3 +21,9 @@
 let name = prompt("What is your name");
 alert(name)
 ```
+## Work experience
+
+* Power engineer at high voltage substation
+
+## Education
+* Gomel State Technical University named after Sukhoi
