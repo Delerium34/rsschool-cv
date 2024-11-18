@@ -108,6 +108,14 @@ body {
   color: #181c29;
 }
 
+section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 82px;
+}
+
+
+
 .header1 {
   font-family: Montserrat;
   font-size: 32px;
@@ -195,25 +203,27 @@ body {
 .header {
   background-color: white;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 64px;
+  top: 0;
+  z-index: 500;
 }
 
-.header__wrapper {
+.header__inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   height: 64px;
   align-items: center;
+  width: 100%;
 }
 
-.header__logo {
+.header__left {
   display: flex;
-  padding: 8px 20px;
   align-items: center;
+  justify-content: space-around;
+  gap: 8px;
 }
 
 
@@ -239,9 +249,6 @@ body {
 }
 
 .header__link {
-  font-size: 12px;
-  line-height: 130%;
-  color: #181c29;
   text-decoration: none;
 }
 
@@ -258,7 +265,6 @@ margin-top: 64px;
 /* Intro styles start*/
 
 .intro {
-  height: 524px;
   background-image: url(../img/png/bg-ball.png);
   background-size: cover;
   width: 100%;
@@ -355,11 +361,12 @@ margin-top: 64px;
 
 .container__slider {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 368px;
-  flex-direction: column;
   position: relative;
+  gap: 20px;
 }
 
 .container__slider-text {
@@ -368,25 +375,31 @@ margin-top: 64px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 426px;
 }
 
 .container__slider-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
   margin-left: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 1993px;
 }
 
-.slide {
+.image__slider {
   width: 200px;
   height: 200px;
 }
 
-.slide img {
+.image__slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .container__slider-button {
@@ -442,5 +455,62 @@ margin-top: 64px;
   height: 434px;
   flex-direction: column;
 }
+
+.container__best-gifts-text {
+  gap: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container__card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 310px;
+  height: 342px;
+  border-radius: 20px;
+  background-color: #ecf3f8;
+  overflow: hidden;
+  
+}
+
+.card-image {
+  width: 310px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-text {
+  width: 310px;
+  height: 112px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px 20px 44px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header4__purple {
+  color: #4361ff;
+}
+
+.header4__green {
+  color: #06a44f;
+}
+
+.header4__pink {
+  color: #ff43f7;
+}
+
 
 /* Best gifts styles end*/
