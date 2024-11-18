@@ -114,8 +114,6 @@ section {
   background-repeat: no-repeat;
 }
 
-
-
 .header1 {
   font-family: Montserrat;
   font-size: 32px;
@@ -599,6 +597,7 @@ margin-top: 64px;
   align-items: center;
   height: 376px;
   flex-direction: column;
+  gap: 60px;
 }
 
 .footer__contacts {
@@ -628,6 +627,33 @@ margin-top: 64px;
   width: 80px;
   height: 80px;
   object-fit: cover;
+}
+
+.footer__section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social {
+  width: 196px;
+  height: 40px;
+  padding: 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.social__image {
+  width: 24px;
+  height: 24px;
 }
 
 /* Footer styles end*/
